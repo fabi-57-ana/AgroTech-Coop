@@ -1,5 +1,33 @@
-
+# Archivos de entorno
 .env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Bytecode de Python
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
-*.env.local
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs y databases
+*.log
+*.sqlite3
+
+# Archivos de pruebas
+.coverage
+htmlcov/
+.pytest_cache/
