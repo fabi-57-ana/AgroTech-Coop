@@ -1,17 +1,17 @@
-
+﻿
 def registrar_medicion():
-    print("\nFunción registrar_medicion() invocada")
+    print("\nFunciÃ³n registrar_medicion() invocada")
 
 def menu_mediciones():
     print("\n=== REGISTRO DE MEDICIONES ===")
-    print("1. Registrar medición")
-    print("2. Volver al menú principal")
+    print("1. Registrar mediciÃ³n")
+    print("2. Volver al menÃº principal")
     
-    opcion = input("Seleccione una opción: ")
+    opcion = input("Seleccione una opciÃ³n: ")
     
     if opcion == "1":
         registrar_medicion()
     elif opcion == "2":
         return
     else:
-        print("Opción no válida")
+        print("OpciÃ³n no vÃ¡lida")

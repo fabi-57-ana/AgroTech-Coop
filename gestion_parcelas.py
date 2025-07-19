@@ -1,4 +1,4 @@
-
+﻿
 from conexion_db import get_db_connection
 import mysql.connector
 # filepath: c:\Users\Usuario\Desktop\agrotech_monitor\gestion_parcelas.py
@@ -12,8 +12,8 @@ def registrar_parcela():
     
     print("\n=== REGISTRAR NUEVA PARCELA ===")
     nombre = input("Nombre de la parcela: ")
-    ubicacion = input("Ubicación: ")
-    area = float(input("Área en m²: "))
+    ubicacion = input("UbicaciÃ³n: ")
+    area = float(input("Ãrea en mÂ²: "))
     
     # Mostrar cultivos disponibles
     cursor.execute("SELECT id_cultivo, nombre FROM cultivos")
@@ -60,8 +60,8 @@ def listar_parcelas():
         for parcela in parcelas:
             print(f"\nID: {parcela['id_parcela']}")
             print(f"Nombre: {parcela['nombre']}")
-            print(f"Ubicación: {parcela['ubicacion']}")
-            print(f"Área: {parcela['area']} m²")
+            print(f"UbicaciÃ³n: {parcela['ubicacion']}")
+            print(f"Ãrea: {parcela['area']} mÂ²")
             print(f"Cultivo: {parcela['cultivo']}")
     
     cursor.close()
@@ -69,12 +69,12 @@ def listar_parcelas():
 
 def menu_parcelas():
     while True:
-        print("\n=== GESTIÓN DE PARCELAS ===")
+        print("\n=== GESTIÃ“N DE PARCELAS ===")
         print("1. Registrar nueva parcela")
         print("2. Listar parcelas registradas")
-        print("3. Volver al menú principal")
+        print("3. Volver al menÃº principal")
         
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opciÃ³n: ")
         
         if opcion == "1":
             registrar_parcela()
@@ -83,4 +83,4 @@ def menu_parcelas():
         elif opcion == "3":
             break
         else:
-            print("Opción no válida")
+            print("OpciÃ³n no vÃ¡lida")
