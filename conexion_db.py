@@ -1,4 +1,3 @@
-﻿
 import os
 import mysql.connector
 from dotenv import load_dotenv
@@ -6,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_db_connection():
-    """Establece y devuelve la conexiÃ³n a la base de datos"""
+    """Establece y devuelve la conexión a la base de datos"""
     try:
         conn = mysql.connector.connect(
             host=os.getenv('DB_HOST'),
@@ -17,9 +16,5 @@ def get_db_connection():
         )
         return conn
     except mysql.connector.Error as err:
-        print(f"Error de conexiÃ³n: {err}")
+        print(f"Error de conexión: {err}")
         return None
-
-
-
-

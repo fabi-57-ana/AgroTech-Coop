@@ -1,4 +1,3 @@
-﻿# -*- coding: utf-8 -*-
 def menu_consultas():
     print("\n=== CONSULTA DE DATOS ===")
     print("1. Visualizar datos")

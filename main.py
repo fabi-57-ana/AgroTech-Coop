@@ -1,20 +1,21 @@
-﻿# -*- coding: utf-8 -*-
-from gestion_parcelas import menu_parcelas
+﻿from gestion_parcelas import menu_parcelas
 from gestion_sensores import menu_sensores
 from registro_mediciones import menu_mediciones
 from consulta_datos import menu_consultas
 
+def mostrar_menu_principal():
+    print("\n=== MENÚ PRINCIPAL ===")
+    print("1. Gestión de Parcelas")
+    print("2. Gestión de Sensores")
+    print("3. Registro de Mediciones")
+    print("4. Consulta de Datos")
+    print("5. Salir")
+
 def main():
     while True:
-        print("\n=== MENÚ PRINCIPAL ===")
-        print("1. Gestión de Parcelas")
-        print("2. Gestión de Sensores")
-        print("3. Registro de Mediciones")
-        print("4. Consulta de Datos")
-        print("5. Salir")
-        
+        mostrar_menu_principal()
         opcion = input("Seleccione una opción: ")
-        
+
         if opcion == "1":
             menu_parcelas()
         elif opcion == "2":

@@ -1,17 +1,16 @@
-﻿
 def registrar_tipo_sensor():
-    print("\nFunciÃ³n registrar_tipo_sensor() invocada")
+    print("\nFunción registrar_tipo_sensor() invocada")
 
 def registrar_sensor_instalado():
-    print("\nFunciÃ³n registrar_sensor_instalado() invocada")
+    print("\nFunción registrar_sensor_instalado() invocada")
 
 def menu_sensores():
-    print("\n=== GESTIÃ“N DE SENSORES ===")
+    print("\n=== GESTIÓN DE SENSORES ===")
     print("1. Registrar tipo de sensor")
     print("2. Registrar sensor instalado")
-    print("3. Volver al menÃº principal")
+    print("3. Volver al menú principal")
     
-    opcion = input("Seleccione una opciÃ³n: ")
+    opcion = input("Seleccione una opción: ")
     
     if opcion == "1":
         registrar_tipo_sensor()
@@ -20,4 +19,4 @@ def menu_sensores():
     elif opcion == "3":
         return
     else:
-        print("OpciÃ³n no vÃ¡lida")
+        print("Opción no válida")
